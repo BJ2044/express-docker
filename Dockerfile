@@ -5,9 +5,10 @@ FROM node:16-alpine3.15
 WORKDIR /src/
 COPY . .
 
-
+#install our dependencies
 RUN npm install
 
+# Set environmental variables
 ENV PORT=3000
 
 #Open up port
