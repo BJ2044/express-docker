@@ -6,7 +6,7 @@ const App = express()
 
 App.use(cors())
 App.get('/test', (req,res) => {
-    res.send('Docker API is running:whale:')
+    res.send('Docker API is running 🐳')
 })
 App.listen(PORT, () => {
     console.log(`listening on http://localhost:${PORT}...`)
